@@ -43,6 +43,8 @@
 	swipeLeftGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
 	[self.tableView addGestureRecognizer:swipeLeftGestureRecognizer];
 
+    self.tabBarItem.selectedImage = [UIImage imageNamed:@"SharedMapsBarIcon-Selected"];
+    
 	#if CUSTOM_APPEARANCE
 	UIImageView *tableImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TableBackground"]];
 	tableImageView.contentMode = UIViewContentModeBottom;
